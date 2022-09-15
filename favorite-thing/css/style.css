@@ -1,0 +1,41 @@
+body.standard {
+    background-color: lightgray;
+}
+
+.container {
+    margin: 20px 50px;
+    padding: 50px;
+    border: 1px solid;
+    border-color: black;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    background-color: rgb(0, 94, 128);
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+li a:hover {
+    background-color: gray;
+}
+
+.active {
+    background-color: lightskyblue;
+}

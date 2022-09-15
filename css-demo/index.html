@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         #p1 {
             color: blue;
@@ -49,19 +50,15 @@
             border: 1px solid;
             border-color: black;
         }
-
-        #container {
-            margin: 20px 50px;
-            padding: 50px;
-            border: 1px solid;
-            border-color: black;
-            background-color: white;
-        }
     </style>
 </head>
 
-<body style="background-color:sandybrown">
-    <div id="container">
+<body class="standard">
+    <div class="container">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
         <h1>Today we will learn about adding style</h1>
         <h2>1. This is how we add style with inline CSS</h2>
         <p>This paragraph has no style</p>
