@@ -1,0 +1,62 @@
+body.standard {
+    background-color: rgb(88, 92, 114)
+}
+
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+p,
+li {
+    color: rgb(89, 85, 86)
+}
+
+td {
+    color: darkblue
+}
+
+.wait {
+    cursor: wait;
+}
+
+.container {
+    margin: 20px 50px;
+    padding: 50px;
+    border: 1px solid;
+    border-color: black;
+    background-color: rgb(224, 229, 237);
+}
+
+ul.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    background-color: rgb(47, 81, 132)
+}
+
+li.navbar {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+li a:hover {
+    background-color: gray;
+}
+
+.active {
+    background-color: rgb(11, 37, 66)
+}
