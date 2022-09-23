@@ -1,0 +1,58 @@
+body.standard {
+    background-color: rgb(43, 132, 159)
+}
+
+.imgcenter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: block;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+p,
+li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    margin: 20px 50px;
+    padding: 50px;
+    border: 1px solid;
+    border-color: black;
+    background-color: white;
+}
+
+ul.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    background-color: darkgrey
+}
+
+li.navbar {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+li a:hover {
+    background-color: gray;
+}
+
+.active {
+    background-color: rgb(32, 93, 178);
+}
