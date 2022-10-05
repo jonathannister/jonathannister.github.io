@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+</head>
+
+<body id="background">
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts?</h2>
+    <a href="https://eastsideprep.org" target="_blank"
+        onclick="alert('Warning! you are navigating away from my page!')">School Website</a>
+    <hr>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Nana nana nana nana'">Reveal</button>
+
+    <hr>
+    <h2>Two truths and a lie</h2>
+    <p>Which one is the lie?</p>
+    <ol id="truths">
+        <li>I was born in Kentucky</li>
+        <li>I </li>
+        <li></li>
+    </ol>
+    <button
+        onclick="document.getElementById('truths').innerHTML='Jg :((' ; document.getElementById('truths').style.display='block'">Reveal</button>
+    <button onclick="document.getElementById('truths').style.display='none'">Hide</button>
+
+    <hr>
+    <h2>How do we change images with javascript?</h2>
+    <img src="images/airplane.jpg" alt="airplane" id="airplane-img" style="width: 50%">
+    <p>Where is this plane heading?</p>
+    <button
+        onclick="document.getElementById('airplane-img').src='images/catalina2.jpg' ; document.getElementById('airplane-img').style.width='50%'">Find
+        out</button>
+    <button
+        onclick="document.getElementById('airplane-img').src='images/airplane.jpg' ; document.getElementById('airplane-img').style.width='50%'">Go
+        back</button>
+
+    <hr>
+    <h2>How do I change css styles with a button?</h2>
+    <p id="alice">Hi. I am Alice.</p>
+    <button
+        onclick="document.getElementById('alice').style.color='blue' ; document.getElementById('alice').style.fontSize='5px'">Cake:
+        eat me</button>
+    <button
+        onclick="document.getElementById('alice').style.color='red' ; document.getElementById('alice').style.fontSize='40px'">Potion:
+        drink me</button>
+
+    <button onclick="normalAlice();">Return to normal</button>
+
+    <hr>
+    <h2>How do we return user input data?</h2>
+    <button onclick="askName()">What's your name?</button>
+    <p id="ask-name"></p>
+
+    <hr>
+    <h2>How do we change the background color? </h2>
+    <button onclick="document.getElementById('background').style.backgroundColor='lightgray'">Change background</button>
+
+    <hr>
+    <h2>How do we change font weight?</h2>
+    <p id="weight">This will be changed</p>
+    <button onclick="weightFunction()">Change font weight</button>
+
+    <script>
+        function normalAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize = '20px';
+        }
+
+        function weightFunction() {
+            document.getElementById("weight").style.fontWeight = "900";
+        }
+
+        function askName() {
+            let
+                nameParagraph = document.getElementById('ask-name'); let name = prompt(" What is your name?"); if (name === "batman") { nameParagraph.innerHTML = "Welcome to the batcave sir"; } else {
+                    nameParagraph.innerHTML = "Hello " + name
+                        + "! Nice to meet you."
+                }
+        } </script>
+</body>
+
+</html>
