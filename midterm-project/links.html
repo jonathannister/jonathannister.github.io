@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .grid-container {
             display: grid;
@@ -13,7 +15,7 @@
         }
 
         .grid-item {
-            background-color: lightblue;
+            background-color: rgb(105, 135, 39);
             text-align: center;
             font-size: 30px;
             padding: 20px;
@@ -36,7 +38,7 @@
 
         .main2 {
             grid-column: 1 / span 2;
-            grid-row: 5;   
+            grid-row: 5;
         }
 
         .sup1 {
@@ -65,10 +67,46 @@
             width: 100%;
             background-color: white;
         }
-
     </style>
 </head>
-<body>
-    
+
+<body class="standard">
+    <div class="container">
+        <div class="grid-container">
+            <div class="navmenu">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="problems.html">Problems</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn"> Statistics
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="statsdropdown1.html">Stats1</a>
+                            <a href="statsdropdown2.html">Stats2</a>
+                        </div>
+                    </div>
+                    <li><a href="causes.html">Causes</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ul>
+            </div>
+            <div class="grid-item main-image">
+                <img src="/midterm-project/images/kittyinabag.jpg" style="width: 100%;">
+            </div>
+            <div class="grid-item main1">Main 1 content</div>
+            <div class="grid-item main2">Main 2 content</div>
+            <div class="grid-item sup1">Support Section 1</div>
+            <div class="grid-item sup2">Support Section 2</div>
+            <div class="grid-item sidenav">Side Nav</div>
+
+        </div>
+
+        <div class="footer">
+            Page by: Alan Yuen
+        </div>
+    </div>
+
 </body>
+
 </html>
