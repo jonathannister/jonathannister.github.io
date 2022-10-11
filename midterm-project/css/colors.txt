@@ -1,0 +1,5 @@
+RGB of Color Themes for midterms
+
+34, 53, 86 Blue
+40, 71, 41 Green
+63, 71, 74 Grey
