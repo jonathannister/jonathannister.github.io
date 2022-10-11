@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            border: 1.5px solid black;
+            padding: 50px 50px 15px;
+            margin: 50px;
+            background-color: white;
+        }
+
+        body {
+            background-color: rgb(34, 53, 86);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(63, 71, 74);
+        }
+
+        li a {
+            float: left;
+            border-right: 1px solid rgb(255, 255, 255);
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgb(92, 115, 173);
+        }
+
+
+
+        .dropdown {
+                float: left;
+                overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+
+            margin: 0;
+        }
+
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(34, 53, 86);
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"> Statistics
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="statsdropdown1.html">Stats1</a>
+                    <a href="statsdropdown2.html">Stats2</a>
+                </div>
+            </div>
+
+
+
+        </ul>
+        <h1></h1>
+        <h2></h2>
+        <div class="footer">
+            <p>Page by Anish Sharma &copy;</p>
+        </div>
+    </div>
+    
+</body>
+</html>
