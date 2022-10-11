@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(34, 53, 86);
+    background-color: rgb(47, 80, 137);
 }
 
 ul {
@@ -14,7 +14,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(63, 71, 74);
+    background-color: rgb(76, 85, 88);
 }
 
 li a {
@@ -33,7 +33,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: rgb(40, 71, 41);
+    background-color: rgb(92, 115, 173);
 }
 
 .center {
@@ -54,4 +54,14 @@ li a:hover:not(.active) {
 
 p {
     font-size: large;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(43, 49, 62);
+    color: white;
+    text-align: center;
 }
