@@ -133,10 +133,11 @@ h1 {
 }
 
 .grid-item {
-    background-color: darkslategray;
+    background-color: lightslategray;
     text-align: left;
     font-size: 25px;
     padding: 20px;
+    margin: 5px;
 }
 
 .block1 {
@@ -157,4 +158,19 @@ h1 {
 .block4 {
     grid-column: 1 / span 2;
     grid-row: 3;
+}
+
+.block5 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.block6 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.block7 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
 }
