@@ -8,19 +8,6 @@
     <title>Links</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .grid-container {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: auto auto 25%;
-        }
-
-        .grid-item {
-            background-color: rgb(105, 135, 39);
-            text-align: center;
-            font-size: 30px;
-            padding: 20px;
-        }
-
         .navmenu {
             grid-column: 1 / span 3;
             grid-row: 1;
@@ -30,35 +17,7 @@
             grid-column: 1 / span 3;
             grid-row: 2;
         }
-
-        .main1 {
-            grid-column: 1 / span 2;
-            grid-row: 3;
-        }
-
-        .main2 {
-            grid-column: 1 / span 2;
-            grid-row: 5;
-        }
-
-        .sup1 {
-            grid-column: 1;
-            grid-row: 4;
-            background-color: red;
-        }
-
-        .sup2 {
-            grid-column: 2;
-            grid-row: 4;
-            background-color: red;
-        }
-
-        .sidenav {
-            grid-column: 3;
-            grid-row: 3 / span 3;
-            background-color: darkred;
-        }
-    </style>
+    </style>     
 </head>
 
 <body class="standard">
@@ -83,20 +42,16 @@
                 </ul>
             </div>
             <div class="grid-item main-image">
-                <img src="/midterm-project/images/kittyinabag.jpg" style="width: 100%;">
+                <img src="/midterm-project/images/homeless.jpg" style="width: 70%; display: block; margin-left: auto; margin-right: auto;">
             </div>
-            <div class="grid-item main1">
+            <div class="grid-item block4">
                 <h1>
-                    Solutions
+                    Links
                 </h1>  
-                <h2>
-                    Things to talk about...
-                </h2>  
+                <a href="https://www.seattle.gov/human-services/reports-and-data/addressing-homelessness" target="_blank">Seattle's Response to Homelessness</a>
+                <br>
+                <a href="https://crosscut.com/opinion/2021/07/homeless-solutions-seattle-can-look-new-york-and-vancouver" target="_blank">Potential Solutions from New York and Vancouver</a>
             </div>
-            <div class="grid-item main2">Main 2 content</div>
-            <div class="grid-item sup1">Support Section 1</div>
-            <div class="grid-item sup2">Support Section 2</div>
-            <div class="grid-item sidenav">Side Nav</div>
     
         </div>
     

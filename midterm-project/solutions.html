@@ -7,58 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .grid-container {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: auto auto 25%;
-        }
+        <style>
+            .navmenu {
+                grid-column: 1 / span 3;
+                grid-row: 1;
+            }
 
-        .grid-item {
-            background-color: rgb(105, 135, 39);
-            text-align: center;
-            font-size: 30px;
-            padding: 20px;
-        }
+            .main-image {
+                grid-column: 1 / span 3;
+                grid-row: 2;
+            }
 
-        .navmenu {
-            grid-column: 1 / span 3;
-            grid-row: 1;
-        }
-
-        .main-image {
-            grid-column: 1 / span 3;
-            grid-row: 2;
-        }
-
-        .main1 {
-            grid-column: 1 / span 2;
-            grid-row: 3;
-        }
-
-        .main2 {
-            grid-column: 1 / span 2;
-            grid-row: 5;
-        }
-
-        .sup1 {
-            grid-column: 1;
-            grid-row: 4;
-            background-color: red;
-        }
-
-        .sup2 {
-            grid-column: 2;
-            grid-row: 4;
-            background-color: red;
-        }
-
-        .sidenav {
-            grid-column: 3;
-            grid-row: 3 / span 3;
-            background-color: darkred;
-        }
-    </style>
+            #img {
+                width: 60%; 
+                display: block; 
+                margin-left: auto; 
+                margin-right: auto;
+            }
+        </style>
 </head>
 
 <body>
@@ -85,20 +51,29 @@
                 </ul>
             </div>
             <div class="grid-item main-image">
-                <img src="/midterm-project/images/kittyinabag.jpg" style="width: 100%;">
+                <img id="img" src="/midterm-project/images/bridge.jpg">
             </div>
-            <div class="grid-item main1">
-                <h1>
-                    Solutions
-                </h1>
-                <h2>
-                    Things to talk about...
-                </h2>
+            <div class="grid-item block5">
+                <h4>What Seattle is doing...</h4>
+                <p>
+                    <ol>
+                        <li>Prevention: Helping people stay in their houses</li>
+                        <li>Emergency: Providing safe places for people to temporarily stay</li>
+                        <li>Housing: Building permanent housing solutions; rapid re-housing, diversion, and permanent supportive housing</li>
+                    </ol>
+                </p>    
             </div>
-            <div class="grid-item main2">Main 2 content</div>
-            <div class="grid-item sup1">Support Section 1</div>
-            <div class="grid-item sup2">Support Section 2</div>
-            <div class="grid-item sidenav">Side Nav</div>
+            <div class="grid-item block6">
+                <h4>Other Solutions Seattle could employ...</h4>
+                <p>
+                    <ol>
+                        <li>
+                            
+                        </li>
+                    </ol>
+                </p>
+            </div>   
+            
 
         </div>
 
