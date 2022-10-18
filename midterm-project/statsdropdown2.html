@@ -7,6 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm-Project</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+                .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto;
+        }
+
+        .grid-item {
+            background-color: darkslategray;
+            text-align: left;
+            font-size: 25px;
+            padding: 20px;
+        }
+
+        .block1 {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        .block2 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .block3 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .block4 {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        body, h1, h3, p, a{
+            color:white
+        }
+    </style>
 </head>
 
 <body>
@@ -19,16 +57,39 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="statsdropdown1.html">Stats1</a>
-                    <a href="statsdropdown2.html">Stats2</a>
+                    <a href="statsdropdown1.html">Graphs and Data</a>
+                    <a href="statsdropdown2.html">Demographics</a>
                 </div>
             </div>
             <li><a href="causes.html">Causes</a></li>
             <li><a href="solutions.html">Solutions</a></li>
             <li><a href="links.html">Links</a></li>
         </ul>
-        <h1>More stats</h1>
-        <h2>Only 53% of homeless people in Seattle had shelter in 2020.</h2>
+        <br>
+        <div class="grid-container">
+            <div class="block1 grid-item"><h1 style="font-size:50px">Demographics</h1></div>
+            <div class="block2 grid-item"><h3>Homelessness</h3><p>Homelessness is currently Seattles biggest problem with over 13,500 homeless just last year. Costs of living have risen significantly over the past decade forcing thousands out of their homes. Additionally, the impact of Covid19 disrupted aid and voluntary efforts to help the homeless. Over the past decade, homelessness has increased by more than 30%. <h3>Misconceptions with Statistics</h3><p>Many people see those who are homeless as criminals, people who consume/use illegal substances, or someone who lives on the street begging for money. While this can be true in some cases, it's usually the other way around. Those who are homeless are usually under financial stress during certain periods of time and in some cases, they can live with another relative or someone they know. Additionally, homelessness and race show no connection meaning financial struggles are completely dependent on an individual. In some areas of Seattle, segregation of lower income from higher income occurs which draws more to a particular neighborhood. This also applies to age as around 4,300 children in Seattle are homeless. Misconceptions tie into gathering data and analyzing the problem as certain groups or organizations might gather differnet forms/types of data whether it be by race, socioeconomic status, or other methods. When there are misconceptions, we won't know how to classify a homeless person which disrupts the process of collecting and analyzing data trends with homelessness in Seattle (This also applies in other places or topics).</p></p></div>
+            <div class="block3 grid-item"><iframe width="100%" height="46.35%" style="border:1px solid white" src="https://www.king5.com/embeds/video/responsive/281-241cef27-01e0-4a3c-bf8a-e424da94df98/iframe" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                <p>Source: King 5 News -                     
+                    Author: Chris Daniels, Quixem Ramirez <br>
+                    Published: 5:29 PM PDT May 30, 2022 <br>
+                    Updated: 9:54 AM PDT June 1, 2022 </p>
+
+                <h3>Other Statistics</h3>
+                <p><a href="https://www.seattle.gov/human-services/reports-and-data/addressing-homelessness">Addressing Homelessness</a> <br>
+                    <a href="https://www.kuow.org/stories/here-s-how-seattle-and-washington-compare-to-national-homeless-trends">Seattle vs Nation Homelessness Trends</a><br>
+                    <a href="temporary">temporary</a><br>
+                    <a href="temp">temp</a><br>
+                    <a href="temp">temp</a><br>
+                
+                </p>
+                
+                </div>
+            <div class="block4 grid-item"><h1>Demographics: Racial and Income</h1><p>Shown below are demographical data on race and socioeconomic status on homelessness in Seattle.</p><div class='tableauPlaceholder' id='viz1665967517135' style='position:fixed'><noscript><a href='https:&#47;&#47;www.seattle.gov&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RacialEquityLab_SeattleDemographics&#47;RacialDemographics&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;RacialEquityLab_SeattleDemographics&#47;RacialDemographics?:language=en-US&amp;:embed=y&amp;:toolbar=yes&amp;:embed_code_version=3&amp;:loadOrderID=0&amp;:display_count=yes&amp;:tabs=yes' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RacialEquityLab_SeattleDemographics&#47;RacialDemographics&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='tabs' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1665967517135');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1270px';vizElement.style.height='750px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1270px';vizElement.style.height='750px';} else { vizElement.style.width='100%';vizElement.style.height='750px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <br><img src="https://images.seattletimes.com/wp-content/uploads/2022/05/fyiguy-income-inequality-census-seattle-map.jpg?d=780x1358" width="100%" height="50%" alt="Image of Income Gaps in Seattle by Neighborhood">
+            </div>
+
+        </div>
         <div class="footer">
             <p>Page by Anish Sharma &copy; 2022</p>
         </div>
