@@ -11,7 +11,7 @@
         .grid-container {
             display: grid;
             grid-gap: 10px;
-            grid-template-columns: auto auto;
+            grid-template-columns: fit-content(8ch);
         }
 
         .grid-item {
@@ -40,6 +40,10 @@
             grid-column: 1 / span 2;
             grid-row: 3;
         }
+
+        body, h1, h3, p, a{
+            color:white
+        }
     </style>
 </head>
 
@@ -53,8 +57,8 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="statsdropdown1.html">Stats1</a>
-                    <a href="statsdropdown2.html">Stats2</a>
+                    <a href="statsdropdown1.html">Graphs and Data</a>
+                    <a href="statsdropdown2.html">Demographics</a>
                 </div>
             </div>
             <li><a href="causes.html">Causes</a></li>
@@ -62,17 +66,36 @@
             <li><a href="links.html">Links</a></li>
         </ul>
 
+        <br>
+
 
         <div class="grid-container">
-            <div class="block1 grid-item"><h1 style="font-size:50px">Statistics</h1></div>
-            <div class="block2 grid-item"><h3>Homelessness</h3><p>Homelessness is currently Seattles biggest problem with over 13,500 homeless just last year. Costs of living have risen significantly over the past decade forcing thousands out of their homes. Additionally, the impact of Covid19 disrupted aid and voluntary efforts to help the homeless. Over the past decade, homelessness has increased by more than 30%. <hr><h3>Misconceptions</h3><p>Many people see those who are homeless as criminals, people who consume/use illegal substances, or someone who lives on the street. While it can be true in some cases, it's usually the other way around. Those who are homeless are usually under financial stress and in some cases can live with another relative or someone they know. </p></p></div>
-            <div class="block3 grid-item"><iframe src="https://www.google.com/maps/d/embed?mid=1bH1x29rdxZJS9gUGyOv7ygGepLA&ehbc=2E312F" width="640" height="480"></iframe>
-        <p>Source: Google My Maps, Proposed Homeless Encampments, By Anonymous User</p></div>
-            <div class="block4 grid-item">Side Nav</div>
+            <div class="block1 grid-item"><h1 style="font-size:50px">Graphs and Data</h1></div>
+            <div class="block2 grid-item"><img src="images/per-capita-income.jpg" witdh="100%" height="100%" alt="Per Capita Income in Seattle"></div>
+            <div class="block3 grid-item"><img src="images/seattle-homelessness-bar-chart.png" width="100%" height="100%" alt="Seattle Homelessness Bar Chart"></div>
+            <div class="block4 grid-item"><p>Figure 1 (On the left) shows a map of per capita income across different neighborhoods in Seattle. Figure 2 (On the right) shows a bar chart of how homelessness in Seattle has increased over the past 14 years.</p>
+                <h3>Click Below for More Resources of Graphs and Data on the Homelessness Crisis in Seattle</h3>
+
+                <p>Click Below for More Resources of Graphs and Data on the Homelessness Crisis in Seattle</p>
+                
+                <button onclick="document.getElementById('resource').innerHTML = 'Test';">More Data and Graphs</button>
+                <button onclick="resources();">Hide Resources</button>
+                <p id="resource"></p>
+
+            
+            </div>
+
         </div>
         <div class="footer">
             <p>Page by Anish Sharma &copy; 2022</p>
         </div>
+
+        <script>
+            function resources() {
+                let moreresources = document.getElementById('resource')
+                moresources = document.getElementById.style.color = 'white';
+            }
+        </script>
     </div>
 </body>
 
