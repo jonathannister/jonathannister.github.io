@@ -8,35 +8,127 @@
     <title>Problems</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- I challenged myself in this project by spend a lot of time carefully producing webpages that wouldn't have bugs or issues.
+A challenge was having a consistent theme and structure amongst my two pages. Fixing issues on HTML and JS was a challenge enough for me, and
+I succeeded in this. I also feel that I coordinated with my groupmembers well, which I have struggled to do in the past.  -->
+<style>
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto;
+    }
+
+    .grid-item {
+        background-color: darkslategray;
+        text-align: left;
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    .block1 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .block2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .block3 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .block4 {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    body,
+    h1,
+    h3,
+    p,
+    a {
+        color: white
+    }
+</style>
+</head>
 
 <body>
-    <div class="standard">
-        <div class="container">
-            <div class="grid-container" style="grid-template-columns: fit-content(8ch);">
-                <div class="navmenu">
-                    <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="problems.html">Problems</a></li>
-                        <div class="dropdown">
-                            <button class="dropbtn"> Statistics
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="statsdropdown1.html">Stats1</a>
-                                <a href="statsdropdown2.html">Stats2</a>
-                            </div>
-                        </div>
-                        <li><a href="causes.html">Causes</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
-                        <li><a href="links.html">Links</a></li>
-                    </ul>
-                </div>
-                <h1>Problems</h1>
-                <h2>There is an increasingly large homeless population in Seattle.</h2>
-                <div class="footer">
-                    <p>Page By Dash Sedway</p>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"> Statistics
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="statsdropdown1.html">Graphs and Data</a>
+                    <a href="statsdropdown2.html">Demographics</a>
                 </div>
             </div>
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+        <br>
+        <div class="grid-container">
+            <div class="block1 grid-item">
+                <h1 style="font-size:50px">Problems of Homelessness</h1>
+            </div>
+            <div class="block2 grid-item">
+                <h3>Who is Homeless?</h3>
+                <p>Homelessness is a broad term, and there are different levels of homelessness, whether it be living in
+                    a homeless shelter or
+                    living in a tent by the highway. Because of this, it's difficult for officials to determine who is
+                    homeless, and how they
+                    must solve the homeless crisis in seattle
+                <h3>Why Efforts From Officials Have Not Worked</h3>
+                <p>Homelessness has been categorized as an issue that is deeper than just not being able to afford a
+                    home.
+                    It is caused by deeper systemic issues like racism and access to education. There is a correlation
+                    between who has access to schooling and connection to culture and society. Homelessness will remain
+                    an issue until those who have experienced homelessness have a say in what the solution (if there is
+                    a
+                    viable one) is.
+                </p>
+                </p>
+            </div>
+            <div class="block3 grid-item">
+                <iframe width="420" height="315" src="https://cdn.jwplayer.com/previews/8aHBCaPQ">
+                </iframe>
+                <p>Source: The Seattle Times -
+                    Author: Sydney Brownstone <br>
+                    Published: Jan. 9, 2022 at 6:00 am <br>
+                    Updated: Jan. 12, 2022 at 2:14 pm </p>
+
+                <h3>See Also:</h3>
+                <p><a href="https://www.seattle.gov/human-services/reports-and-data/addressing-homelessness">Addressing
+                        Homelessness</a> <br>
+                    <a
+                        href="https://www.seattletimes.com/seattle-news/homeless/seattle-has-struggled-to-care-for-sick-and-homeless-people-since-the-1800s-now-programs-are-trying-something-different/s">Link
+                        to Video Above
+                    </a><br>
+
+
+                </p>
+
+            </div>
+            <div class="block4 grid-item">
+                <h1>The Different Types of Homelessness</h1>
+
+
+                <br><img src="images/homeless-chart.png" width="75%" height="75%"
+                    alt="Image of Income Gaps in Seattle by Neighborhood">
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>Page by Dash Sedway &copy; 2022</p>
+        </div>
+    </div>
 </body>
 
 </html>
