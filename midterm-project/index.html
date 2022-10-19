@@ -8,12 +8,17 @@
     <title>Seattle Homelessness | Home Page</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         #bgimg {
             margin-left: auto;
             margin-right: auto;
             padding: auto;
             width: 100%;
             display: block;
+            border: 2px solid black;
         }
 
         .imgcontainer {
@@ -48,22 +53,26 @@
             color: white
         }
 
-        p {
-            color: white;
-        }
-
         table,
         th,
         td {
-            border: 2px solid black;
+            border: 4px double black;
             border-collapse: collapse;
             padding: 10px;
             margin: auto;
         }
+
+        #scrollsection {
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
-<body>
+<body id="scrollsection">
     <!-- <div class="container" style="background-image: url('images/home-background.jpg'); opacity: 0.3;"> -->
     <div class="container">
         <ul class="nav">
@@ -86,7 +95,8 @@
         <div class="grid-container">
             <div class="block1 grid-item">
                 <div class="imgcontainer">
-                    <img src="images/space-needle2.jpg" alt="Space Needle Title" style="width:75%; opacity: 0.4;">
+                    <img src="images/space-needle2.jpg" alt="Space Needle Title"
+                        style="width:75%; border: 2px solid black; opacity: 0.4;">
                     <div class="centered">
                         <h1 class="title">Seattle Homelessness</h1>
                     </div>
@@ -110,50 +120,53 @@
                 </p>
             </div>
             <div class="block4 grid-item">
-                <table>
+                <table id="table">
                     <caption>Seattle Homelessness over Time</caption>
                     <tr>
                         <th>Year</th>
                         <th>Total homeless population</th>
                         <th>Amount unsheletered</th>
                     </tr>
-                    <tr>
-                        <td>2006</td>
-                        <td>7,910</td>
-                        <td>25%</td>
-                    </tr>
-                    <tr>
-                        <td>2012</td>
-                        <td>8,875</td>
-                        <td>29%</td>
-                    </tr>
-                    <tr>
-                        <td>2016</td>
-                        <td>10,730</td>
-                        <td>42%</td>
-                    </tr>
-                    <tr>
-                        <td>2020</td>
-                        <td>11,751</td>
-                        <td>47%</td>
-                    </tr>
                 </table>
+                <br>
+                <button onclick="addRow('2006', '7,910', '25%')">Reveal 2006 Data</button>
+                <button onclick="addRow('2012', '8,875', '29%')">Reveal 2012 Data</button>
+                <button onclick="addRow('2016', '10,730', '42%')">Reveal 2016 Data</button>
+                <button onclick="addRow('2020', '11,751', '47%')">Reveal 2020 Data</button>
+
             </div>
             <div class="block5 grid-item">
                 <img src="images/home-img.jpg" alt="Seattle Homeless Background" id="bgimg">
             </div>
             <div class="block6 grid-item">
-                <p>Check out the below video to learn more and hear about the mayor's current plan:</p>
-                <iframe src="https://www.youtube.com/embed/O3N31GzTs8M" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen style="width: 100%; height: 87%;"></iframe>
+                <details style="height: 42%;">
+                    <summary>Open the below to learn more and hear about the mayor's current plan.</summary>
+                    <iframe src="https://www.youtube.com/embed/O3N31GzTs8M" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen style="width: 100%; height: 200%;"></iframe>
+                </details>
+
             </div>
-            <div class="block7 grid-item">Main 5</div>
         </div>
+        <br>
+        <a href="#scrollsection" style="font-size: 25px;">Back to top</a><br><br><br>
         <div class="footer">
             <p>Page By Jonathan Nister</p>
         </div>
     </div>
 </body>
+
+<script>
+    function addRow(year, pop, percent) {
+        var table = document.getElementById("table");
+        var row = table.insertRow();
+        var cell = row.insertCell();
+        cell.innerHTML = year;
+        cell = row.insertCell();
+        cell.innerHTML = pop;
+        cell = row.insertCell();
+        cell.innerHTML = percent;
+    }
+</script>
 
 </html>

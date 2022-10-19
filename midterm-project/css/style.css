@@ -138,6 +138,7 @@ h1 {
     font-size: 25px;
     padding: 20px;
     margin: 5px;
+    border: 2px solid black;
 }
 
 .block1 {
