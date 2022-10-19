@@ -8,6 +8,58 @@
     <title>Seattle Homelessness | Home Page</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
+        #bgimg {
+            margin-left: auto;
+            margin-right: auto;
+            padding: auto;
+            width: 100%;
+            display: block;
+        }
+
+        .imgcontainer {
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+
+        .centered {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8px;
+            left: 19%;
+        }
+
+        .title {
+            font-size: 100px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .bottomtitle {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: white
+        }
+
+        p {
+            color: white;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -30,17 +82,72 @@
             <li><a href="solutions.html">Solutions</a></li>
             <li><a href="links.html">Links</a></li>
         </ul>
-        <h1>Welcome to a group website made by Jonathan, Anish, Dash, and Alan!</h1>
-        <h2>For this project, our aim is to help out the greater Seattle community by sharing information about the
-            homeless community in Seattle, including causes, statistics, data, and resources that you can use to help.
-            Check out the other pages to learn more! </h2>
+        <br>
         <div class="grid-container">
-            <div class="block1 grid-item">Main Image</div>
-            <div class="block2 grid-item">Main 1 contents</div>
-            <div class="block3 grid-item">Main 2 contents</div>
-            <div class="block4 grid-item">Side Nav</div>
-            <div class="block5 grid-item">Main 3</div>
-            <div class="block6 grid-item">Main 4</div>
+            <div class="block1 grid-item">
+                <div class="imgcontainer">
+                    <img src="images/space-needle2.jpg" alt="Space Needle Title" style="width:75%; opacity: 0.4;">
+                    <div class="centered">
+                        <h1 class="title">Seattle Homelessness</h1>
+                    </div>
+                    <div class="bottom-left">
+                        <h1 class="bottomtitle">Website by Jonathan, Anish, Dash, and Alan</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="block2 grid-item">
+                <p>
+                    Homelessness in Seattle is a growing problem, with 349 homeless out of every 100,000 residents.
+                    Recently, this number has increased by 23%. Continue reading, and check out the pages above, to
+                    learn more and help out.
+                </p>
+            </div>
+            <div class="block3 grid-item">
+                <p>For this project, our aim is to help out the greater Seattle community by sharing information about
+                    the
+                    homeless community in Seattle, including causes, statistics, data, and resources that you can use to
+                    help.
+                </p>
+            </div>
+            <div class="block4 grid-item">
+                <table>
+                    <caption>Seattle Homelessness over Time</caption>
+                    <tr>
+                        <th>Year</th>
+                        <th>Total homeless population</th>
+                        <th>Amount unsheletered</th>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>7,910</td>
+                        <td>25%</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>8,875</td>
+                        <td>29%</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>10,730</td>
+                        <td>42%</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>11,751</td>
+                        <td>47%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="block5 grid-item">
+                <img src="images/home-img.jpg" alt="Seattle Homeless Background" id="bgimg">
+            </div>
+            <div class="block6 grid-item">
+                <p>Check out the below video to learn more and hear about the mayor's current plan:</p>
+                <iframe src="https://www.youtube.com/embed/O3N31GzTs8M" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen style="width: 100%; height: 87%;"></iframe>
+            </div>
             <div class="block7 grid-item">Main 5</div>
         </div>
         <div class="footer">
