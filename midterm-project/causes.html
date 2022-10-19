@@ -9,35 +9,155 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<style>
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: fit-content(8ch);
+    }
+
+    .grid-item {
+        background-color: darkslategray;
+        text-align: left;
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    .block1 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .block2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .block3 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .block4 {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    body,
+    h1,
+    h3,
+    p,
+    a {
+        color: white
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #section1 {
+        height: 0px;
+        background-color: rgb(40, 71, 41);
+    }
+
+    #section2 {
+        height: 10px;
+        background-color: rgb(40, 71, 41);
+    }
+</style>
+</head>
+
 <body>
-    <div class="standard">
-        <div class="container">
-            <div class="grid-container">
-                <div class="navmenu">
-                    <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="problems.html">Problems</a></li>
-                        <div class="dropdown">
-                            <button class="dropbtn"> Statistics
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="statsdropdown1.html">Stats1</a>
-                                <a href="statsdropdown2.html">Stats2</a>
-                            </div>
-                        </div>
-                        <li><a href="causes.html">Causes</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
-                        <li><a href="links.html">Links</a></li>
-                    </ul>
-                </div>
-                <h1>Causes</h1>
-                <h2>One cause: constant inflation causes affordability of housing to decrease for low income families.
-                </h2>
-                <div class="footer">
-                    <p>Page By Dash Sedway</p>
+    <div class="main" id="section1">
+        <a href="#section2"></a>
+        <!--NEW FEATURE-->
+    </div>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"> Statistics
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="statsdropdown1.html">Graphs and Data</a>
+                    <a href="statsdropdown2.html">Demographics</a>
                 </div>
             </div>
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+
+        <br>
+
+
+        <div class="grid-container">
+            <div class="block1 grid-item">
+                <h1 style="font-size:50px">Causes of Homelessness</h1>
+            </div>
+            <div class="block2 grid-item"><img src="images/lumen-field.JPG" witdh="150px" height="120px"
+                    alt="Per Capita Income in Seattle"></div>
+            <div class="block3 grid-item">
+                <p style="position:relative; right:30px; top: -30px; text-align:right" class="a">Causes of
+                    homelessness
+                    in Seattle stem from the rise in rent, and income inequality. Infation has become a big factor of
+                    homelessness in recent months. Other factors are drug addiction and domestic violence that can occur
+                    in the Seattle area.
+                    Another big factor is unwillingness to move into homeless shelters. The Seattle government also
+                    needs to fund the homeless more than it currently does. </p>
+                <!--NEW FEATURE ABOVE ^-->
+            </div>
+            <div class="block4 grid-item">
+                <p>Figure 1 (On the left) shows a homeless camp near Lumen Field (home of the Seahawks and Sounders)
+                </p>
+
+
+                <p>Click Below for More Information on Homelessness</p>
+
+
+
+
+                <button
+                    onclick="document.getElementById('resource').innerHTML = '1. New York City: 77,943, 2. Los Angeles County: 63,706, 3. Seattle/King County: 11,751 ';">U.S.
+                    Cities With Highest Homeless Population
+                </button>
+
+                <p id="resource"></p>
+
+
+
+                <div class="main" id="section2">
+                    <a href="#section1">Return To The Top</a>
+                    <!--all part of sections 1, 2, and html-->
+                </div>
+
+            </div>
+            <button onclick="question()">Answer One Question Before You Go (Click)</button>
+            <br>
+            <p id="Question" style="color:black"></p>
+        </div>
+        <div class="footer">
+            <p>Page by Dash Sedway &copy; 2022</p>
+        </div>
+
+        <script>
+            function question() {
+                let
+                    questionprompt = document.getElementById('Question'); let name = prompt("Was this information helpful? Respond 'yes' or 'no'"); if (name === "yes") { questionprompt.innerHTML = "Thank you for the feedback! Hopefully you learned something today."; } else {
+                        questionprompt.innerHTML = "Sorry to hear this. Take a look at the links on the website for more information!"
+                    }
+            }
+
+        </script>
+        <script>
+            function resources() {
+                let moreresources = document.getElementById('resource')
+                moresources = document.getElementById.style.color = 'white';
+            }
+        </script>
+    </div>
 </body>
 
 </html>
