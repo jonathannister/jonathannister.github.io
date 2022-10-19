@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seattle Homelessness | Home Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kwh6dkp.css">
+
+    <!--SCROLLING NEW FEATURE-->
     <style>
         html {
             scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: fairwater-deco-serif, sans-serif;
         }
 
         #bgimg {
@@ -37,7 +44,7 @@
         .bottom-left {
             position: absolute;
             bottom: 8px;
-            left: 19%;
+            left: 16%;
         }
 
         .title {
@@ -73,7 +80,6 @@
 </head>
 
 <body id="scrollsection">
-    <!-- <div class="container" style="background-image: url('images/home-background.jpg'); opacity: 0.3;"> -->
     <div class="container">
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
@@ -95,6 +101,7 @@
         <div class="grid-container">
             <div class="block1 grid-item">
                 <div class="imgcontainer">
+                    <!--TEXT ON TOP OF IMAGE NEW FEATURE-->
                     <img src="images/space-needle2.jpg" alt="Space Needle Title"
                         style="width:75%; border: 2px solid black; opacity: 0.4;">
                     <div class="centered">
@@ -129,6 +136,9 @@
                     </tr>
                 </table>
                 <br>
+                <p>Click the buttons below to reveal table data. Go ahead and make a mental
+                    guess before, though! Were
+                    you right?</p>
                 <button onclick="addRow('2006', '7,910', '25%')">Reveal 2006 Data</button>
                 <button onclick="addRow('2012', '8,875', '29%')">Reveal 2012 Data</button>
                 <button onclick="addRow('2016', '10,730', '42%')">Reveal 2016 Data</button>
@@ -139,8 +149,9 @@
                 <img src="images/home-img.jpg" alt="Seattle Homeless Background" id="bgimg">
             </div>
             <div class="block6 grid-item">
+                <!--NEW FEATURE SUMMARY AND DETAILS TAGS-->
                 <details style="height: 42%;">
-                    <summary>Open the below to learn more and hear about the mayor's current plan.</summary>
+                    <summary>Open below to learn more and hear about the mayor's current plan.</summary>
                     <iframe src="https://www.youtube.com/embed/O3N31GzTs8M" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen style="width: 100%; height: 200%;"></iframe>
@@ -156,17 +167,20 @@
     </div>
 </body>
 
+</html>
+
 <script>
     function addRow(year, pop, percent) {
         var table = document.getElementById("table");
-        var row = table.insertRow();
-        var cell = row.insertCell();
-        cell.innerHTML = year;
-        cell = row.insertCell();
-        cell.innerHTML = pop;
-        cell = row.insertCell();
-        cell.innerHTML = percent;
+        if ((year === '2006' && table.rows.length == 1) || (year === '2012' && table.rows.length == 2) ||
+            (year === '2016' && table.rows.length == 3) || (year === '2020' && table.rows.length == 4)) {
+            var row = table.insertRow();
+            var cell = row.insertCell();
+            cell.innerHTML = year;
+            cell = row.insertCell();
+            cell.innerHTML = pop;
+            cell = row.insertCell();
+            cell.innerHTML = percent;
+        }
     }
 </script>
-
-</html>
