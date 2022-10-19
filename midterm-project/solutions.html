@@ -1,3 +1,9 @@
+<!-- 
+
+I challenged myself in this project by trying to help coordinate this project with all of our group memebers and making sure that everybody had their say in this project. I did this by pulling up a whiteboard to figure out what we would do for not only our color scheme but also our grid layout design. I also mentioned after every class period what we should all get done by the start of the next class or what we needed to get done or how to coordinate to things done (I made our group chat). A way that I made sure everyone had their say was by asking how people would like the grid layout to be. Specifically, I remember Anish asking about a side nav bar and I included his suggestion by integrating it with our current design format but just making it up to each group member how they wanted to size the grids. In conclusion, I think that I challenged myself in this project not through the coding or content but through better teamwork. 
+
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,83 +11,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links</title>
+    <title>Solutions</title>
     <link rel="stylesheet" href="css/style.css">
-        <style>
-            .navmenu {
-                grid-column: 1 / span 3;
-                grid-row: 1;
-            }
+    <style>
+        html {
+            scroll-behavior: smooth;
+            /* New CSS Style/Feature (1)*/
+        }
 
-            .main-image {
-                grid-column: 1 / span 3;
-                grid-row: 2;
-            }
+        #td1 {
+            text-align: left;
+        }
 
-            #img {
-                width: 60%; 
-                display: block; 
-                margin-left: auto; 
-                margin-right: auto;
-            }
-        </style>
+        #img {
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: auto;
+            padding-bottom: auto;
+        }
+
+        h1,
+        body {
+            color: white
+        }
+
+        table,
+        th,
+        td {
+            border: 1.5px solid;
+            border-spacing: 7px;
+            border-color: black;
+            width: auto;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="grid-container">
-            <div class="navmenu">
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="problems.html">Problems</a></li>
-                    <div class="dropdown">
-                        <li>
-                            <button class="dropbtn"> Statistics
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="statsdropdown1.html">Stats1</a>
-                                <a href="statsdropdown2.html">Stats2</a>
-                            </div>
-                        </li>     
-                    </div>
-                    <li><a href="causes.html">Causes</a></li>
-                    <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="links.html">Links</a></li>
-                </ul>
+        <!-- New Feature, back to the top First button anchor (1st Feature and Button) -->
+        <a id="top"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"> Statistics
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="statsdropdown1.html">Graphs and Data</a>
+                    <a href="statsdropdown2.html">Demographics</a>
+                </div>
             </div>
-            <div class="grid-item main-image">
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+        <br>
+        <div class="grid-container">
+            <div class="grid-item block1" style="grid-template-columns: auto;">
+                <h1>Solutions to Homelessness</h1>
+            </div>
+            <div class="grid-item block2">
                 <img id="img" src="/midterm-project/images/bridge.jpg">
             </div>
-            <div class="grid-item block5">
-                <h4>What Seattle is doing...</h4>
-                <p>
+            <div class="grid-item block3">
+                <h2>What Seattle is doing...</h4>
+                    <p>Seattle's policy framework for addressing homelessness:</p>
                     <ol>
-                        <li>Prevention: Helping people stay in their houses</li>
-                        <li>Emergency: Providing safe places for people to temporarily stay</li>
-                        <li>Housing: Building permanent housing solutions; rapid re-housing, diversion, and permanent supportive housing</li>
+                        <li>Person-centered service model</li>
+                        <li>Invest in programs that effectively connect people to housing</li>
+                        <li>Address racial disparities</li>
                     </ol>
-                </p>    
-            </div>
-            <div class="grid-item block6">
-                <h4>Other Solutions Seattle could employ...</h4>
-                <p>
-                    <ol>
-                        <li>
-                            
-                        </li>
-                    </ol>
-                </p>
-            </div>   
-            
+                    <p>
+                        Seattle has changed how they are investing in homelessness services. First, they are increasing
+                        access to Housing & Diversion. There has been a 10% increase in rent paid without subsidy and
+                        19% increase in people moving into permanent housing after using diversion funds. Second,
+                        they're shifting to a Person-Centered Service Model. Seattle has opened 2 new shelters with 175
+                        enhanced shelter beds, enhanced 67% of the 1773 shelter beds, and enhanced 25 shelters. All the
+                        shelters have extended hours and supportive services. Third, they are improving government
+                        accountability by better training for staff, active contract management, better funding and
+                        governance agreements, and competitive funding proccesses for service contracts.
+                    </p>
+                    <table cellspacing="10">
+                        <thead>
+                            <tr>
+                                <th>Investment Areas</th>
+                                <th>What they are...</th>
+                            </tr>
+                        </thead>
 
+                        <tbody>
+                            <tr>
+                                <td id="td1">Prevention</td>
+                                <td>Helping people stay in their houses</td>
+                            </tr>
+                            <tr>
+                                <td id="td1">Emergency</td>
+                                <td>Providing safe places for people to temporarily stay</td>
+                            </tr>
+                            <tr>
+                                <td id="td1">Housing</td>
+                                <td>Building permanent housing solutions; rapid re-housing, diversion, and permanent
+                                    supportive housing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+
+            <div class="grid-item block4" style="margin-left: auto; margin-right: auto;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sCzBi-TLKu0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen style="margin-left: auto; margin-right: auto;"></iframe>
+            </div>
+
+            <div class="grid-item block5">
+                <h2>Other Solutions Seattle could employ...</h2>
+                <ol>
+                    <li id="bold1">Housing Vouchers:</li> <!-- First JS Function -->
+                    <!-- One of my buttons to manipulate CSS (2nd Button)-->
+                    <button onclick="more1(); bold1();">More Info</button>
+                    <p id="more1"></p> <!-- Second JS Function -->
+
+                    <li id="bold2">Offer a check of $7,500 to people without housing for six months or less, and
+                        don't have
+                        severe substance abuse issues.</li>
+                    <button onclick="more2(); bold2()">More Info</button>
+                    <p id="more2"></p>
+                </ol>
+            </div>
+
+            <div class="grid-item block6">
+                <img id="img" src="/midterm-project/images/services.png">
+            </div>
         </div>
+
+        <!-- New Feature, back to the top button anchor, Second button to manipulate HTML (1st Feature) -->
+        <a href="#top" style="color: black;">Back to top</a>
 
         <div class="footer">
             <p>Page by Alan Yuen</p>
         </div>
     </div>
 
+    <script>
+        function more1() {
+            let more1 = document.getElementById('more1')
+            more1.style.color = 'white';
+            more1.style.fontStyle = 'italic'; /* Italics New CSS Style/Feature (2)*/
+            more1.innerHTML = 'There are many people that cycle in and out of Seattle\'s homeless services. Many of them could receive help by receiving housing vouchers that would help them pay their rent. They would pay the 30% of their income that they can afford and the housing voucher can help top up the rest up to $2,217 per month for a family of three in a two-bedroom apartment.';
+        }
+
+        function more2() {
+            let more2 = document.getElementById('more2')
+            more2.style.color = 'white';
+            more2.style.fontStyle = 'italic'; /* Italics New CSS Style/Feature (2)*/
+            more2.innerHTML = 'In 2018, Vancouver did just this and according to research from the New Leaf Project, it worked. "Out of the 115 people in the study, the 50 lucky recipients received $7,500 in cash per person, and were compared with a control group. The researchers reevaluated them in a year. The people who received money spent significantly less time homeless and increased spending on food, clothes and rent. They were more food secure. On average, recipients even had $1,000 in savings after a year. And contrary to stereotypes, they cut their spending on alcohol, cigarettes and drugs by almost 40%." (Crosscut)';
+        }
+
+        function bold1() {
+            let bold1 = document.getElementById('bold1')
+            bold1.style.fontWeight = 'bold'; /* Bold New CSS Style/Feature (3)*/
+            bold1.style.fontStyle = 'italic'; /* Italics New CSS Style/Feature (2)*/
+            bold1.style.fontFamily = 'broadway'; /* New Font */
+        }
+
+        function bold2() {
+            let bold2 = document.getElementById('bold2')
+            bold2.style.fontWeight = 'bold'; /* Bold New CSS Style/Feature (3)*/
+            bold2.style.fontStyle = 'italic'; /* Italics New CSS Style/Feature (2)*/
+            bold2.style.fontFamily = 'broadway'; /* New Font */
+        }
+    </script>
 </body>
 
 </html>

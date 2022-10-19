@@ -8,53 +8,97 @@
     <title>Links</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .navmenu {
-            grid-column: 1 / span 3;
-            grid-row: 1;
+        html {
+            scroll-behavior: smooth; /* New CSS Style/Feature (1)*/
         }
 
-        .main-image {
-            grid-column: 1 / span 3;
-            grid-row: 2;
+        #img {
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: auto;
+            padding-bottom: auto;
+        }
+
+        h1,
+        h2,
+        p {
+            color: white
+        }
+
+        a{
+            font-size: 15px;
         }
     </style>     
 </head>
 
-<body class="standard">
+<body>
     <div class="container">
+        <a id="top"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"> Statistics
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="statsdropdown1.html">Graphs and Data</a>
+                    <a href="statsdropdown2.html">Demographics</a>
+                </div>
+            </div>
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+        <br>
         <div class="grid-container">
-            <div class="navmenu">
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="problems.html">Problems</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn"> Statistics
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="statsdropdown1.html">Stats1</a>
-                            <a href="statsdropdown2.html">Stats2</a>
-                        </div>
-                    </div>
-                    <li><a href="causes.html">Causes</a></li>
-                    <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="links.html">Links</a></li>
-                </ul>
+            <div class="grid-item block1" style="grid-template-columns: auto;">
+                <h1>Links and Resources</h1>
             </div>
-            <div class="grid-item main-image">
-                <img src="/midterm-project/images/homeless.jpg" style="width: 70%; display: block; margin-left: auto; margin-right: auto;">
+
+            <div class="grid-item block2">
+                <img id="img" src="/midterm-project/images/homeless.jpg">
             </div>
-            <div class="grid-item block4">
-                <h1>
+            
+            <div class="grid-item block3">
+                <h2>
                     Links
-                </h1>  
+                </h2>  
+
+                <p>Articles: </p>
+                <a href="https://en.wikipedia.org/wiki/Homelessness_in_Seattle" target="_blank">Information About Homelessness in Seattle</a>
+                <br>
                 <a href="https://www.seattle.gov/human-services/reports-and-data/addressing-homelessness" target="_blank">Seattle's Response to Homelessness</a>
                 <br>
+                <a href="https://www.seattletimes.com/seattle-news/homeless/how-many-homeless-people-are-in-king-county-depends-who-you-ask/">Differences in the Census of Homeless People in Seattle</a>
+                <br>
+                <a href="https://sccinsight.com/2017/06/05/understanding-one-night-count-report-homelessness/" target="_blank">Seattle Council Insights Regarding Homeless</a>
+                <br>
+                <a href="https://www.washingtonpost.com/dc-md-va/2022/08/24/homeless-seattle-hud-statistics/" target="_blank">Homeless Seattle Statistics</a>
+                <br>
+                <a href="https://www.wliha.org/sites/default/files/A19_Ted_Kelleher_homelessness%202019-11%20v2%20a19.pdf">More Information and Statistics Regarding Homelessness in Seattle</a>
+                <br>
+                <a href="https://projects.seattletimes.com/2021/project-homeless-data-page/" target="_blank">Homelessness in Seattle Compared Across the Country</a>
+                <br>
+                <a href="https://www.kuow.org/stories/here-s-how-seattle-and-washington-compare-to-national-homeless-trends">Homelessness Compared Across the Country Again</a>
+                <br>
                 <a href="https://crosscut.com/opinion/2021/07/homeless-solutions-seattle-can-look-new-york-and-vancouver" target="_blank">Potential Solutions from New York and Vancouver</a>
-            </div>
-    
+                
+                <p>Youtube Videos: </p>
+                <a href="https://www.youtube.com/watch?v=U4jWIMyk-4E" target="_blank">Youtube Video About How Half of Homeless People Offered Shelter Said No</a>
+                <br>
+                <a href="https://www.youtube.com/watch?v=p1WyAEkgzI8" target="_blank">Youtube Video About Why They're So Many Homeless Citizens</a>
+                <br>
+                <a href="https://www.youtube.com/watch?v=sCzBi-TLKu0" target="_blank">Youtube Video About How Tiny Homes Could Help Solve Homelessness</a>
+                <br>
+                <a href="https://www.youtube.com/watch?v=O3N31GzTs8M" target="_blank">Youtube Video About Mayor's Plan to Combat Homelessness</a>     
+            </div>   
         </div>
-    
+        
+        <a href="#top" style="color: black;">Back to top</a>
+
         <div class="footer">
             <p>Page by Alan Yuen</p>    
         </div>
